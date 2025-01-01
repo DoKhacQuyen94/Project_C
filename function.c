@@ -83,70 +83,70 @@ void chooseYourRole(int *choice,Student student[], int *length,int *firstChoice)
 				printfStudent(student,length);
 				printf("Go Back(b)? or Exit(0): ");
 				fgets(choiceSub, sizeof(choiceSub), stdin);
-		        choiceSub[strcspn(choiceSub, "\n")] = '\0';
-		        if (strcmp(choiceSub, "0") == 0) {
-		        	end();
-		            *firstChoice=0;
-		            *choice = 0;
-		        }
+				choiceSub[strcspn(choiceSub, "\n")] = '\0';
+				if (strcmp(choiceSub, "0") == 0) {
+					end();
+					*firstChoice=0;
+					*choice = 0;
+				}
 				break;
 			case 2:	
-			    printf("Nhap so luong sinh vien: ");
-			    scanf("%d", &n);
-			    getchar();
+				printf("Nhap so luong sinh vien: ");
+				scanf("%d", &n);
+				getchar();
 				inputStudent(student,n,length);
 				printf("Go Back(b)? or Exit(0): ");
 				fgets(choiceSub, sizeof(choiceSub), stdin);
-		        choiceSub[strcspn(choiceSub, "\n")] = '\0';
-		        if (strcmp(choiceSub, "0") == 0) {
-		        	end();
-		            *firstChoice=0;
-		            *choice = 0;
-		        }
+				choiceSub[strcspn(choiceSub, "\n")] = '\0';
+				if (strcmp(choiceSub, "0") == 0) {
+					end();
+					*firstChoice=0;
+					*choice = 0;
+				}
 				break;
 			case 3:
 				searchStudentByName(student,*length);
 				printf("Go Back(b)? or Exit(0): ");
 				fgets(choiceSub, sizeof(choiceSub), stdin);
-		        choiceSub[strcspn(choiceSub, "\n")] = '\0';
-		        if (strcmp(choiceSub, "0") == 0) {
-		        	end();
-		            *firstChoice=0;
-		            *choice = 0;
-		        }
+				choiceSub[strcspn(choiceSub, "\n")] = '\0';
+				if (strcmp(choiceSub, "0") == 0) {
+					end();
+					*firstChoice=0;
+					*choice = 0;
+				}
 				break;
 			case 4: 
 				editStudent(student,length);
 				printf("Go Back(b)? or Exit(0): ");
 				fgets(choiceSub, sizeof(choiceSub), stdin);
-		        choiceSub[strcspn(choiceSub, "\n")] = '\0';
-		        if (strcmp(choiceSub, "0") == 0) {
-		            *firstChoice=0;
-		            *choice = 0;
-		            end();
-		        }
+				choiceSub[strcspn(choiceSub, "\n")] = '\0';
+				if (strcmp(choiceSub, "0") == 0) {
+					end();
+					*firstChoice=0;
+					*choice = 0;
+				}
 				break;
 			case 5: 
 				deleteStudent(student,length);
 				printf("Go Back(b)? or Exit(0): ");
 				fgets(choiceSub, sizeof(choiceSub), stdin);
-		        choiceSub[strcspn(choiceSub, "\n")] = '\0';
-		        if (strcmp(choiceSub, "0") == 0) {
-		            *firstChoice=0;
-		            *choice = 0;
-		            end();
-		        } 
+				choiceSub[strcspn(choiceSub, "\n")] = '\0';
+				if (strcmp(choiceSub, "0") == 0) {
+					end();
+					*firstChoice=0;
+					*choice = 0;
+				}
 				break;
 			case 6:
 				sortStudentsByName(student,*length);
 				printf("Go Back(b)? or Exit(0): ");
 				fgets(choiceSub, sizeof(choiceSub), stdin);
-		        choiceSub[strcspn(choiceSub, "\n")] = '\0';
-		        if (strcmp(choiceSub, "0") == 0) {
-		            *firstChoice=0;
-		            *choice = 0;
-		            end();
-		        }
+				choiceSub[strcspn(choiceSub, "\n")] = '\0';
+				if (strcmp(choiceSub, "0") == 0) {
+					end();
+					*firstChoice=0;
+					*choice = 0;
+				}
 				break;
 			case 0:
 				break;
@@ -264,7 +264,7 @@ void inputStudent(Student student[], int n, int *currentLength) {
             }
         } while (!valid);
 
-        // Nhap pass v‡ check
+        // Nhap pass v√† check
         do {
             printf("Nhap Password: ");
             fgets(student[*currentLength + j].password, sizeof(student[*currentLength + j].password), stdin);
@@ -593,6 +593,5 @@ void loginAdmin(const char email[], const char password[]) {
         }
     }
 }
-
 
 
