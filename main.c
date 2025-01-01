@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 			case 1:
 				loginAdmin(email,password);
 				system("cls");
-    			chooseYourRole(&choice,student,&length,&firstChoice);
+				chooseYourRole(&choice,student,&length,&firstChoice);
 				break;
 			case 2:
 				system("cls");
